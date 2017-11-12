@@ -1,0 +1,15 @@
+INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, EMAIL, DATE_OF_BIRTH) VALUES (1, 'Ada', 'Maria', 'ada.maria@gmail.com', DATE '1982-08-31');
+INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, EMAIL, DATE_OF_BIRTH) VALUES (2, 'Vishnu', 'Som', 'vishnu.som@gmail.com', DATE '1989-02-27');
+INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, EMAIL, DATE_OF_BIRTH) VALUES (3, 'Mary', 'Elizabeth', 'mary.elizabeth@gmail.com', DATE '1994-10-08');
+INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, EMAIL, DATE_OF_BIRTH) VALUES (4, 'Hari', 'Mudra', 'hari.mudra@gmail.com', DATE '1976-11-08');
+INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, EMAIL, DATE_OF_BIRTH) VALUES (5, 'Praveen', 'Koka', 'praveen.koka@gmail.com', DATE '1965-03-30');
+INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, EMAIL, DATE_OF_BIRTH) VALUES (6, 'Harsha', 'Koka', 'harsha.koka@gmail.com', DATE '1999-04-21');
+INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, EMAIL, DATE_OF_BIRTH) VALUES (7, 'Rajasekhar', 'Mudra', 'rajasekhar.mudra@gmail.com', DATE '2001-09-11');
+INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, EMAIL, DATE_OF_BIRTH) VALUES (8, 'Indrajith', 'Som', 'indrajith.som@gmail.com', DATE '1990-01-02');
+INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, EMAIL, DATE_OF_BIRTH) VALUES (9, 'Tanveer', 'Mohammed', 'tanveer.mohammed@gmail.com', DATE '1975-06-04');
+INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, EMAIL, DATE_OF_BIRTH) VALUES (10, 'Liz', 'Smith', 'liz.smith@gmail.com', DATE '1980-07-23');
+INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, EMAIL, DATE_OF_BIRTH) VALUES (11, 'Narahari', 'Moka', 'narahari.moka@gmail.com', DATE '1972-12-28');
+INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, EMAIL, DATE_OF_BIRTH) VALUES (12, 'John', 'Giovanni', 'john.giovanni@gmail.com', DATE '1974-11-12');
+INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, EMAIL, DATE_OF_BIRTH) VALUES (13, 'Robert', 'Vanni', 'robert.vanni@gmail.com', DATE '1961-02-05');
+INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, EMAIL, DATE_OF_BIRTH) VALUES (14, 'Jessi', 'Smith', 'jessi.smith@gmail.com', DATE '1967-04-17');
+INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, EMAIL, DATE_OF_BIRTH) VALUES (15, 'Lionel', 'Lam', 'lionel.lam@gmail.com', DATE '1964-08-21');
