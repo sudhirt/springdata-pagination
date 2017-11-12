@@ -48,7 +48,7 @@ public class PersonService {
         Pageable pageable = pageable(personSearchCriteria);
         if (pageable == null) {
             List<Person> people = personRepository.findAll(example(personSearchCriteria));
-            return new PageImpl<Person>(people, PageRequest.of(0, people.size()), people.size());
+            return new PageImpl<>(people, PageRequest.of(0, people.size()), people.size());
         } else {
             return personRepository.findAll(example(personSearchCriteria), pageable);
         }

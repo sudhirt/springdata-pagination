@@ -25,7 +25,7 @@ public class PersonSearchTest {
 
     @Test
     public void getById() {
-        Optional<Person> p = personService.get(10l);
+        Optional<Person> p = personService.get(10L);
         assertThat(p).isPresent();
     }
 
@@ -61,8 +61,8 @@ public class PersonSearchTest {
         assertThat(people.getContent()
                 .isEmpty()).isFalse();
         people.stream()
-                .forEach(p -> p.getFirstName()
-                        .contains("ar"));
+                .forEach(p -> assertThat(p.getFirstName()
+                        .contains("ar")).isTrue());
     }
 
     @Test
@@ -90,10 +90,10 @@ public class PersonSearchTest {
                 .isEmpty()).isFalse();
         people.stream()
                 .forEach(p -> {
-                    p.getFirstName()
-                            .contains("ar");
-                    p.getLastName()
-                            .contains("oka");
+                    assertThat(p.getFirstName()
+                            .contains("ar")).isTrue();
+                    assertThat(p.getLastName()
+                            .contains("oka")).isTrue();
                 });
     }
 }
