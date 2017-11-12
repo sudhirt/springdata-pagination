@@ -8,6 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 import javax.validation.ConstraintViolationException;
 import java.util.Date;
@@ -17,7 +18,6 @@ import static org.assertj.core.api.Assertions.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@Transactional
 public class PersonServiceTest {
 
     @Autowired
@@ -27,7 +27,8 @@ public class PersonServiceTest {
     public void savePersonWithNoDetails() {
         Person p = Person.builder()
                 .build();
-        assertThatExceptionOfType(DataIntegrityViolationException.class).isThrownBy(() -> personService.save(p));
+        Throwable thrown = catchThrowable(() -> personService.save(p));
+        assertThat(thrown).hasRootCauseInstanceOf(ConstraintViolationException.class);
     }
 
     @Test
@@ -37,7 +38,8 @@ public class PersonServiceTest {
                 .email("test@test.com")
                 .dateOfBirth(new Date())
                 .build();
-        assertThatExceptionOfType(DataIntegrityViolationException.class).isThrownBy(() -> personService.save(p));
+        Throwable thrown = catchThrowable(() -> personService.save(p));
+        assertThat(thrown).hasRootCauseInstanceOf(ConstraintViolationException.class);
     }
 
     @Test
@@ -47,7 +49,8 @@ public class PersonServiceTest {
                 .email("test@test.com")
                 .dateOfBirth(new Date())
                 .build();
-        assertThatExceptionOfType(DataIntegrityViolationException.class).isThrownBy(() -> personService.save(p));
+        Throwable thrown = catchThrowable(() -> personService.save(p));
+        assertThat(thrown).hasRootCauseInstanceOf(ConstraintViolationException.class);
     }
 
     @Test
@@ -57,7 +60,8 @@ public class PersonServiceTest {
                 .lastName("Lastname")
                 .dateOfBirth(new Date())
                 .build();
-        assertThatExceptionOfType(DataIntegrityViolationException.class).isThrownBy(() -> personService.save(p));
+        Throwable thrown = catchThrowable(() -> personService.save(p));
+        assertThat(thrown).hasRootCauseInstanceOf(ConstraintViolationException.class);
     }
 
     @Test
@@ -79,7 +83,8 @@ public class PersonServiceTest {
                 .lastName("Lastname")
                 .email("email@mail.com")
                 .build();
-        assertThatExceptionOfType(DataIntegrityViolationException.class).isThrownBy(() -> personService.save(p));
+        Throwable thrown = catchThrowable(() -> personService.save(p));
+        assertThat(thrown).hasRootCauseInstanceOf(ConstraintViolationException.class);
     }
 
     @Test
